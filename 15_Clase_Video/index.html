@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <!--La etiqueta video permite ingresa video en la 
+            página, contiene el atributo url para especificarle
+            la ubicación del video, sin embargo solo con este 
+            atributo va a aparecer como una fotografía, por lo
+            que hay que colocar el atributo controls, otro atributo
+            es preload que no permite que el video se empiece a 
+            renderizar apenas se ingrese a la página, existe tambien
+            el atributo para que el video comience a reporducirse apenas
+            se ingrese a la pagina, pero esta es muy mala practica,
+            podemos ingresar las etiquetas source para ingresar mas de 
+            formato y sea el navegador el que busque el primero que 
+            se encuentre-->
+            <video  controls preload="auto">
+                <source src="./Video.mp4#t=10,15"/>
+                <source src="./Video.m4v#t=10,15"/>
+            </video>
+        </section>
+    </main>
+</body>
+</html>
