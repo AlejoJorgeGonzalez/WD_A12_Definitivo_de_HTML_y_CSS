@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!--form es la etiqueta para generar formularios-->
+    <form action="">
+        <!--label es la eqtiqueta que esta dentro del form que 
+        permite darle un nombre al cuadro del formulario-->
+        <label for="Nombre">
+            <span>¿Cuál es tu nombre?</span>
+            <!--input es el cuadro del formulario, esta 
+            compuesto por type que el tipo de valor a ingresar y 
+            id que debe ser el mismo que el atributo for de la 
+            etiqueta label y por último el atributo paceholder
+            que permite agregar un texto en el cuadro del formulario-->
+            <input type="text" id="Nombre" placeholder="Tu nombre"/>
+        </label>
+        <label for="inicio-platzi">
+            <span>¿Qué día comenzastes en Platzi?</span>
+            <!--En el atributo type se coloca date para colocar
+            una fecha-->
+            <input type="date" id="inicio-platzi" />
+        </label>
+        <label for="horario">
+            <span>¿En que horario estudias?</span>
+            <!--En el atributo type se coloca time para colocar
+            un tiempo de horas-->
+            <input type="time" id="horario" />
+        </label>
+    </form>
+</body>
+</html>
