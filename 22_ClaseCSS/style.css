@@ -1,0 +1,23 @@
+/* Una primera forma para darle estilo es colocar el tipo de 
+etiqueta que va a cambiar su estilo */
+p {
+    color: green;
+    font-size: 40px;
+}
+
+/*Podemos llamar una etiqueta en especifico por medio de la 
+función class*/
+/* class */
+/* Otra forma de darle un estilo a un etiqueta es llamarla con 
+el parametro class en el HTML y ese nombre comenzarla en el CSS
+con un punto y el nombre de la clase */
+.parrafo{
+   color: red; 
+}
+
+/* Otra forma es por medio de ID */
+/* ID */
+#texto{
+    color: yellow;
+    font-size: 24px;
+}
