@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <main>
+        <!--Select permite tener una lista para que el usario
+        pueda seleccionarla dandole scroll. esta compuesta por
+        el parametro name que es el nombre que le damos al select
+        el id permite seleccionar que información es la que vamos
+        a enviar. Dentro del select se selecciona los valores a 
+        mostrar por medio de las etiquetas option-->
+        <!-- <select name="" id=""> -->
+            <!--option esta compuesto por el parametro value, que 
+            lo que vamos a enviar cuando le hacemos submit a la pagina-->
+            <!-- <option value="JavaScript">JavaScript</option>
+            <option value="HTML5">HTML5</option>
+            <option value="CSS3">CSS3</option>
+            <option value="Web Standards">Web Standards</option>
+        </select> -->
+        <input list="cursos">
+        <datalist id="cursos">
+            <option value="JavaScript"></option>
+            <option value="HTML5"></option>
+            <option value="CSS3"></option>
+            <option value="Web Standards"></option>
+        </datalist>
+    </main>
+</body>
+</html>
