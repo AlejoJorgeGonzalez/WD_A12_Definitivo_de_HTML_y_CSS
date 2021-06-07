@@ -7,39 +7,34 @@
     <title>Calendario</title>
 </head>
 <body>
-    <!--Creamos un formulario-->
-    <!--<form action="">-->
-        <!--Primero creamos la casilla de hora-->
-        <!--<label for="hora">
-            <span>Hora</span>-->
-            <!--en input, el type es de tipo time, el id debe ser
-            el mismo que el label, y agregamos name para saber
-            como se llama la variable que recoge el dato-->
-            <!--<input type="time" id="hora" name="hora">
-        </label>
-        <label for="dia">
-            <span>Día</span>
-            <input type="date" id="dia" name="dia">
-        </label>
-        <label for="semana">
-            <span>Semana</span>
-            <input type="week" id="semana" name="semana">
-        </label>
-        <label for="mes">
-            <span>Mes</span>
-            <input type="month" id="mes" name="mes">
-        </label>-->
-        <!--El tipo submit es un tipo de subida de información-->
-        <!--<input type="submit">
-    </form>-->
-    <form action="">
-        <label for="calendario">
-            <span>Calendario</span>
-            <!--el datetime-local le pedimos que nos de el dato
-            tiempo de nuestra ubicación local-->
-            <input type="datetime-local" id="calendario" name="calendario">
-        </label>
-        <input type="submit">
-    </form>
+    <main>
+        <form action="">
+            <label for="nombre">
+                <span>¿Cuál es tu nombre?</span>
+                <!--Para poder utilizar el autocomplete, es decir, la función
+                que no permite obtener datos de la web del usuario, utilizamos
+                el parametro autocomplete con la variable a obtener, que para 
+                este caso es el nombre name
+                Otro parametro que se agrega es el required, que se utiliza 
+                para decirle al usuario que la casilla del formulario es 
+                obligatoria llenarla-->
+                <input type="text" name="nombre" id="nombre" autocomplete="name" required>
+            </label>
+            <label for="correo">
+                <span>¿Cuál es tu correo?</span>
+                <!--El tipo email es para colocar correo en formulario-->
+                <input type="email" name="correo" id="correo" autocomplete="email" required>
+            </label>
+            <label for="pais">
+                <span>¿En que país vives?</span>
+                <input type="text" name="pais" id="pais" autocomplete="country" required>
+            </label>
+            <label for="cp">
+                <span>¿Cuál es tu código postal?</span>
+                <input type="text" name="cp" id="cp" autocomplete="postal-code" required>
+            </label>
+            <input type="submit">
+        </form>
+    </main>
 </body>
 </html>
