@@ -1,0 +1,54 @@
+.main-nav {
+    margin-top: 10px;
+    /* Para quitar los puntos en la lista desordenada */
+    list-style: none;
+    /* Padding es el espacio interno dentro de un contenedor, al
+    hacerlo 0 este espacio desaparece */
+    padding-left: 0;
+    /* El background-color cambia el color de fondo del contenedor */
+    background-color: #13a4a4;
+}
+
+.main-nav__item {
+    /* display permite cambiar la vista es que esta los elementos
+    una forma es colocarlo como inline-block que coloca la lista
+    en una linea horizontal*/
+    display: inline-block;
+}
+
+/* A esto se le conoce ser especificos en HTML, le decimos que 
+aplique el estilo a todas las clases main-nav__item que tambien
+tenga la etiqueta "a" en HTML  */
+.main-nav__item a{
+    /* Con estos estilos cambiamos uno por uno las cajas que estan
+    dentro del contenedor de ul, color cambia el color de fuente
+    de la letra, el padding es el tamaño del borde estas cajas,
+    border-radius crea esquinas redondeadas en las cajas y el 
+    text-decoration es la decoración del texto */
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+/* con esta clase, al terminar con hover, lo que hace es que 
+cambia el estilo de la caja a pasar el curso sobre ella. Estos
+efectos que ocurren en una acción sobre la clase es lo que se
+les conoce como pseudo clases, y se llaman por medio de dos 
+puntos desoues de la llamar la clase*/
+.main-nav__item a:hover {
+    color: blue;
+}
+
+/* La pseudoclase active permite generar un estilo al hacer click
+sobre el objeto */
+.main-nav__item a:active {
+    color: red;
+}
+
+/* Los pseudoelementos se llaman colocando 4 puntos despues de 
+llamar a la clase, el pseudo elemento after coloca un elemento
+despues del elemento*/
+.main-nav__item a::after{
+    content: " | ";
+}
