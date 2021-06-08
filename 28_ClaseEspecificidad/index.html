@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="page-header">
+        <!-- Colocamos para ejemplo un id y un class. es de anotar
+        que el id es unico, solo se puede colocar un id con un nombre
+        en una sola etiqueta. En cambio las clases son genericas, 
+        estas puede colocarse en otra etiqueta -->
+        <h1 id="page-title" class="title">Empresa</h1>
+        <nav>
+            <ul id="main-nav" class="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Cursos</a></li>
+                <li><a href="">Instructores</a></li>
+                <!-- Se cambia el estilo del ancla de blog, una
+                forma que es una mala practica es crear el estilo 
+                embebido dentro de la etiqueta, ya que si por alguna
+                razón queremos cambiar el estilo y lo hacemos 
+                directamente desde el archivo css, los cambios no
+                tendrían efecto ya que es mas importante un inline
+                en etiqueta que una clase o un id -->
+                <!-- <li><a href="" style="background-color: orange;" class="blog">Blog</a></li> -->
+                <li><a href="" class="blog">Blog</a></li>
+            </ul>
+
+        </nav>
+    </header>
+</body>
+</html>
