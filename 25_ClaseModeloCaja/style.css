@@ -1,0 +1,29 @@
+/* Se coloca el selector universal, es decir va a darle estilo
+a todo en general, para evitar tenerle que dar scroll a lo ancho
+de la página, esta parte lo que hace es quitar la parte mas
+externa de la página */
+* {
+    /* con el box lo que hacemos es decirle que sume el border 
+    y el padding de las cajas para restalas al ancho de la pagina
+    que en el momento se muestra */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    /* width es el ancho del contenido y height la altura del c
+    contenido, estas se puede expresar en porcentaje como en 
+    pixeles  */
+    width: 100%;
+    height: 500px;
+    /* border es el borde de la caja, se le puede dar el ancho
+    de la línea, el tipo de linea y color */
+    border: 10px solid grey;
+    /* padding en el espacio desde el borde al contenido, en este
+    caso la primera distancia es de arriba y abajo y la
+    segunda de la izquierda y de la derecha. Cuando se deja un
+    solo número como por ejemplo  padding: 20px; CSS asume que
+    son 20 pixeles alrededor de los cuatro bordes de la caja */
+    padding: 20px 35px;
+}
