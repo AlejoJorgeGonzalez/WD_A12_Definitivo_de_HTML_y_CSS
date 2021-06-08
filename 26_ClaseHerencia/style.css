@@ -1,0 +1,15 @@
+/* Ingresando a html, estamos cambiando los estilo que viene 
+prederteminados cuando se crea el archivo HTML. Con el atributo
+font-size cambiamos el tamaño de la letra y con font-family el tipo
+de letra */
+html {
+    font-size: 75%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* h1 es el selector hijo de html, en propiedades se escribe que
+el tamaño de la fuente font-size lo herede del selector padre
+por lo cuál toma el mismo tamaño que el selector html */
+h1 {
+    font-size: inherit;
+}
