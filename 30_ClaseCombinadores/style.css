@@ -11,6 +11,26 @@ un combinador a un hermano cercano o Adjacent Siblings */
 hermano general h2, se pinte de rojo. Es decir, se busca que
 una etiqueta p este al mismo nivel de etiqueta que alguna 
 etiqueta h2 */
-h2 ~ p {
+/* h2 ~ p {
+    color: red;
+} */
+
+
+/* Con este código se le dice que si la etiqueta p es hija 
+directa de una etiqueta div, se le realice el cambio de estilo,
+si observa en el index.html, se puede comprobrar que las dos
+ultimas etiquetas p son hijas directa de div, por tanto se le 
+aplica el estilo. Mientras que las dos primeras etiquetas p, son
+hijas directas de la etiqueta article, por tanto no se le aplica
+el cambio de estilo */
+/* div > p {
+    color: red;
+} */
+
+
+/* Este código se ha tratado en clases pasadas, simplemente es 
+que la etiqueta p que es herencia desde de una etiqueta div, se 
+le aplique los cambios en el estilo */
+div p {
     color: red;
 }
