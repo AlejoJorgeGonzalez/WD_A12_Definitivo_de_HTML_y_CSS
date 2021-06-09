@@ -3,6 +3,14 @@ parrafos que estan junto a una etiqueta h2, es decir, busca una
 etiqueta p y mira si la etiqueta junto a ella, es decir arriba
 es h2 y si se cumple, le pone color rojo. A esto se le llama
 un combinador a un hermano cercano o Adjacent Siblings */
-h2 + p {
+/* h2 + p {
+    color: red;
+} */
+
+/* Con este código se le dice que si la etiqueta p tiene un 
+hermano general h2, se pinte de rojo. Es decir, se busca que
+una etiqueta p este al mismo nivel de etiqueta que alguna 
+etiqueta h2 */
+h2 ~ p {
     color: red;
 }
