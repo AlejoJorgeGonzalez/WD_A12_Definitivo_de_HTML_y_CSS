@@ -1,0 +1,41 @@
+/* Colocando el tamaño de la fuente en pixeles, este nunca va a 
+cambiar de tamaño, puede que la pantalla sea mas pequeña, este 
+tamaño nunca va a cambiar. A esto se le conoce como una medida
+absoluta */
+/* p {
+    font-size: 18px;
+} */
+
+
+/* Colocando el valor de porcentaje, este va a variar su tamaño
+según el tamaño de la pantalla. A esto se le conoce como una
+medida relativa */
+/* p {
+    font-size: 50%;
+} */
+
+/* Con este código se le da un tamaño relativo al ancho que ocupe
+el tamaño de la pantalla y un tamaño absoluto al alto de la 
+página*/
+/* main {
+    background-color: red;
+    width: 100%;
+    height: 500px;
+}
+
+p {
+    font-size: 16px;
+} */
+
+
+/* Con este código se manejan medidas absolutas, tanto en el 
+ancho como el alto de la página */
+main {
+    background-color: red;
+    width: 600px;
+    height: 500px;
+}
+
+p {
+    font-size: 16px;
+}
