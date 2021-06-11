@@ -1,0 +1,30 @@
+/* Es muy practica resetear con el selector universal los valores
+del margin y del padding, además del colocar el box sizing
+border box */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Colocando el tamaño de fuente del html en 62.5%, 
+garantizamos que 1rem es igual a 10px, entonces por ejemplo, si
+queremos un tamaño de 16px colocamos 1.6px y si queremos 20px 
+colocamos 2.0, con esto nos evitamos el hacer reglas de tres 
+para buscar el tamaño del rem. Es muy recomendable realizar
+esta practica en cualquier proyecto */
+html {
+    font-size: 62.5%;
+}
+
+
+/* rem toma su valor de acuerdo al tamaño de la etiqueta raiz
+es decir, desde la etiqueta html */
+p {
+    font-size: 1.6rem;
+}
+
+main div {
+    font-size: 1.6rem;
+}
