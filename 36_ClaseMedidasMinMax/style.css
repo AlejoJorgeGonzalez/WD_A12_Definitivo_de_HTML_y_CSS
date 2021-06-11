@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    /* Con este valor del vw (view width) y del vh (view height)
+    lo que se busca es que se ocupe el 100% tanto del ancho como
+    el alto de la pantalla */
+    width: 100vw;
+    height: 100vh;
+    background-color: purple;
+}
+
+/* En el section se coloca un ancho del 80% del tamaño del main
+y una altura de 500 pixeles con un color de fondo rojo, un margin
+de '0 auto' que significa que tiene un margen de 0 de arriba
+hacia abajo y un auto que centra de derecha a izquierda.
+Con min-widht, le damos un ancho minimo, entonces con el widht al
+80%, la section se va a mantener al 80% del tamaño de la pantalla
+siempre y cuando se mayor a 320px.
+Con max width, se le da un ancho maximo, es decir que section 
+no puede pasar de 500px de ancho
+Con min-height, se crea una medida minima del contenedor de sectio
+con el fin de que no se produzca un overflow, es decir, que se 
+escriba texto un por encima del otro debido al pequeño espacio 
+del contenedor */
+section {
+    width: 80%;
+    min-width: 320px;
+    max-width: 500px;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: red;
+}
