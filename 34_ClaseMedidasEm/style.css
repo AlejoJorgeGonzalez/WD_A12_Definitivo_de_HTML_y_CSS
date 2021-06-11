@@ -1,0 +1,18 @@
+/* body {
+    font-size: 20px;
+} */
+
+
+.text-container {
+    /* Se trabaja con medidad em, la medida em es la relación 
+    con respecto al tamaño de la etiqueta padre, para este la 
+    toma directamente de los estilos html, donde el valor del 
+    tamaño de la fuente es 16px, y por ser esta 1.5em, su valor 
+    esta dado por 16px*1.5 = 24px */
+    font-size: 1.5em;
+}
+
+
+.text-container div{
+    font-size: 1.5em;
+}
