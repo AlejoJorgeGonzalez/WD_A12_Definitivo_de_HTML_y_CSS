@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+
+header {
+    background-color: gainsboro;
+    width: 100%; 
+    height: 8rem;
+    padding: 0;
+    margin: 0;   
+}
+
+
+.logo-section {
+    display: inline-block;
+    position: relative;
+    margin-left: 2%;
+    height: 100%;
+}
+
+
+.logo-section figure {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+
+.main-nav {
+    position: relative;    
+    height: 100%;
+    float: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+}
+
+
+.main-nav nav ul {
+    list-style: none;
+}
+
+
+.main-nav nav ul li {
+    display: inline-block;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+
+
+main {
+    background-color: gray;
+}
+
+
+.items-list {
+    display: inline-block;
+    background-color: tomato;
+    width: 15%;
+}
+
+
+.items-list ul {
+    padding: 5% 5%;
+}
+
+
+.items-list ul li {
+    background-color: violet;
+    height: 11rem;
+    margin: 5% 0%;
+    border-radius: 5%;
+}
+
+
+footer {
+    background-color: yellow;
+}
+
+
+.description {
+    float: right;
+    position: relative;
+    position: relative;
+    width: 85%;
+    margin-top: 0;
+}
+
+
+.description p {
+    font-size: 1.6rem;
+}
+
+.about-us {
+    display: inline-block;
+
+}
+
+
+.about-us p {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+
+.social-media {
+    float: right;
+}
+
+
+.social-media nav ul {
+    list-style: none;
+}
+
+
+.social-media nav ul li {
+    display: inline-block;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem 1rem;
+}
