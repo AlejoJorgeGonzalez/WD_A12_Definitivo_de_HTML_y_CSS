@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <!-- Es muy buena practica que al colocar una imagen 
+        este dentro de una etiqueta picture -->
+        <picture>
+            <!-- La etiqueta source se utiliza para tener fotos
+            auxiliares en caso de que falle la renderización de 
+            la foto en el img, pero tiene la utilidad de agregarle
+            un media query con el fin de escoger la imagen según
+            el break point que le asignemos -->
+            <source media="(min-width: 1300px)" srcset="./imgs/large.jpg">
+            <source media="(min-width: 1000px)" srcset="./imgs/medium.jpg"> 
+            <img src="./imgs/small.jpg" alt="Es una imágen de ejemplo">
+        </picture>
+    </main>
+    
+</body>
+</html>
